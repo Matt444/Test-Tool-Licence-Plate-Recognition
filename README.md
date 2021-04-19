@@ -17,11 +17,11 @@ optional arguments:<br>
   -o OUTPUT, --output OUTPUT<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; path to output directory for processed images/video<br>
 
-## Connect your python software to locate and recognice car plates
+## Connect your python scripts to locate and recognice car plates
 
 File lpl.py for locate plates should consist of:
 * class LicensePlatesLocator with boolean argument debug in constructor,
-* function locate_license_plates(image) inside mentioned class with type used in cv2 library for images
+* function locate_license_plates(**image**) inside mentioned class with type used in cv2 library for images
 * list of 2-tuples consisted of rois (part of image where license plate was found ) and rectangles (where that was found in format (x,y,w,h)) eg. [(roi1,rect1), (roi2, rect2), ... ] is returned
 
 File chrec.py for plate recognition should consist of:
