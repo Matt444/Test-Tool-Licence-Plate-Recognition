@@ -16,6 +16,10 @@ optional arguments:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; whether only run characters recognition<br>
   -o OUTPUT, --output OUTPUT<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; path to output directory for processed images/video<br>
+ -vl VERIFY_LOCATIONS, --verify_locations VERIFY_LOCATIONS<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; path to locations.py file which returns location of plate of given image_name in format (xmin, ymin, xmax, ymax) is required<br>
+  -vr VERIFY_CHARACTERS_RECOGNITION, --verify_characters_recognition VERIFY_CHARACTERS_RECOGNITION<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; path to values.py file which returns value of plate of given image_name is required
 
 ## Connect your python scripts to locate and recognice car plates
 
